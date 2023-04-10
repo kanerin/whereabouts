@@ -1,0 +1,37 @@
+<%= stylesheet_link_tag 'index', :media => "all" %>
+<div class="container">
+    <div class="left-card">
+        <h2>My Information</h2>
+        <p>Some information about myself goes here.</p>
+        <p>Some more information goes here.</p>
+        <p>Even more information goes here.</p>
+        <p>my email address is <%= @user.email %> and my user ID is <%= @user.id %>.</p>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+    </div>
+    <div class="right-cards">
+        <div class="community-card">
+            <h2>Community 1</h2>
+            <p>Some information about this community goes here.</p>
+        </div>
+        <div class="community-card">
+            <h2>Community 2</h2>
+            <p>Some information about this community goes here.</p>
+        </div>
+        <div class="community-card">
+            <h2>Community 3</h2>
+            <p>Some information about this community goes here.</p>
+        </div>
+        <div class="community-card">
+            <h2>Community 4</h2>
+            <p>Some information about this community goes here.</p>
+        </div>
+        <div class="community-card">
+            <h2>Community 5</h2>
+            <p>Some information about this community goes here.</p>
+        </div>
+        <div class="community-card">
+            <h2>Community 6</h2>
+            <p>Some information about this community goes here.</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+/* Reset styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+	background-color: #f7f7f7;
+	font-family: sans-serif;
+}
+
+/* Container styles */
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+/* Left card styles */
+.left-card {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 20px;
+	width: 30%;
+    height: min-content;
+	position: sticky;
+	top: 20px;
+}
+
+/* Right cards styles */
+.right-cards {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 20px;
+	width: 68%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* Community card styles */
+.community-card {
+	background-color: #f7f7f7;
+	border: 1px solid #ccc;
+	padding: 20px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+	.container {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.left-card {
+		width: 100%;
+		margin-bottom: 20px;
+		position: static;
+	}
+	.right-cards {
+		width: 100%;
+	}
+}
