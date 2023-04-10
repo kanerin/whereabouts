@@ -1,0 +1,21 @@
+databases:
+  - name: wehereabouts_DB
+    databaseName: whereabouts_db_u5b3
+    user: whereabouts
+    region: singapore
+
+services:
+  - type: web
+    name: whereabouts
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: wehereabouts_DB
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
