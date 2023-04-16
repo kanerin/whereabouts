@@ -3,7 +3,6 @@ class UsersController < ApplicationController
 
   def index
     @user = current_user
-    flash[:notice] = "テストメッセージ"
   end
   
 end

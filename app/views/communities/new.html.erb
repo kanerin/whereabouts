@@ -1,0 +1,9 @@
+<h1>コミュニティを作成</h1>
+<%= form_for @Community do |f| %>
+  <div class="field">
+    <%= f.label :eventname %>
+    <%= f.text_field :eventname, :size => 100 %>
+  </div>
+  <%= f.submit "Tweetする" %>
+<% end %>
+<%= link_to "Tweet一覧に戻る", Communities_path %>

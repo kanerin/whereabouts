@@ -7,6 +7,7 @@
         <p>Even more information goes here.</p>
         <p>my email address is <%= @user.email %> and my user ID is <%= @user.id %>.</p>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+        <%= link_to "新規投稿ページへ", tweets_new_path %>
     </div>
     <div class="right-cards">
         <div class="community-card">
